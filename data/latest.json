@@ -1,40 +1,44 @@
 {
-  "schema_version": 1,
-  "updated_at": null,
+  "schema_version": 2,
+  "updated_at": "2026-08-30T16:05:47.676413+00:00",
   "rates": {
-    "us10y": null,
-    "us10y_as_of": null,
-    "fed_funds_lower": null,
-    "fed_funds_upper": null,
-    "fed_funds_as_of": null
+    "us10y": 4.72,
+    "us10y_as_of": "2026-08-28",
+    "fed_funds_lower": 3.5,
+    "fed_funds_upper": 3.75,
+    "fed_funds_as_of": "2026-07-29",
+    "sources": {
+      "us10y": "Yahoo Finance ^TNX",
+      "fed_funds": "Federal Reserve latest FOMC statement"
+    }
   },
   "valuation": {
     "qqq": {
       "symbol": "QQQ",
-      "forward_pe": null,
-      "forward_pe_as_of": null,
-      "forward_pe_source": null,
-      "earnings_yield": null,
-      "spread_vs_10y": null,
-      "zscore_5y": null,
-      "zscore_observations": 0,
-      "bond_signal": "unknown",
-      "history_signal": "insufficient_history"
+      "proxy": "Nasdaq-100",
+      "forward_pe": 28.12,
+      "forward_pe_as_of": "2026-08-29",
+      "forward_pe_source": "Nasdaq-100 consensus Forward P/E (History of Market)",
+      "earnings_yield": 3.5562,
+      "spread_vs_10y": -1.1638,
+      "zscore_5y": -1.0862,
+      "zscore_observations": 326,
+      "bond_signal": "expensive",
+      "history_signal": "caution"
     },
     "voo": {
       "symbol": "VOO",
-      "forward_pe": null,
-      "forward_pe_as_of": null,
-      "forward_pe_source": null,
-      "earnings_yield": null,
-      "spread_vs_10y": null,
-      "zscore_5y": null,
-      "zscore_observations": 0,
-      "bond_signal": "unknown",
-      "history_signal": "insufficient_history"
+      "proxy": "S&P 500",
+      "forward_pe": 27.42,
+      "forward_pe_as_of": "2026-08-29",
+      "forward_pe_source": "S&P 500 consensus Forward P/E (History of Market)",
+      "earnings_yield": 3.647,
+      "spread_vs_10y": -1.073,
+      "zscore_5y": -1.4733,
+      "zscore_observations": 374,
+      "bond_signal": "expensive",
+      "history_signal": "caution"
     }
   },
-  "warnings": [
-    "Waiting for first backend publish."
-  ]
+  "warnings": []
 }
