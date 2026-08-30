@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "updated_at": null,
+  "rates": {
+    "us10y": null,
+    "us10y_as_of": null,
+    "fed_funds_lower": null,
+    "fed_funds_upper": null,
+    "fed_funds_as_of": null
+  },
+  "valuation": {
+    "qqq": {
+      "symbol": "QQQ",
+      "forward_pe": null,
+      "forward_pe_as_of": null,
+      "forward_pe_source": null,
+      "earnings_yield": null,
+      "spread_vs_10y": null,
+      "zscore_5y": null,
+      "zscore_observations": 0,
+      "bond_signal": "unknown",
+      "history_signal": "insufficient_history"
+    },
+    "voo": {
+      "symbol": "VOO",
+      "forward_pe": null,
+      "forward_pe_as_of": null,
+      "forward_pe_source": null,
+      "earnings_yield": null,
+      "spread_vs_10y": null,
+      "zscore_5y": null,
+      "zscore_observations": 0,
+      "bond_signal": "unknown",
+      "history_signal": "insufficient_history"
+    }
+  },
+  "warnings": [
+    "Waiting for first backend publish."
+  ]
+}
