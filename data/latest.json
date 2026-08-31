@@ -1,6 +1,6 @@
 {
-  "schema_version": 2,
-  "updated_at": "2026-08-30T16:05:47.676413+00:00",
+  "schema_version": 4,
+  "updated_at": "2026-08-31T01:48:40.636348+00:00",
   "rates": {
     "us10y": 4.72,
     "us10y_as_of": "2026-08-28",
@@ -10,6 +10,43 @@
     "sources": {
       "us10y": "Yahoo Finance ^TNX",
       "fed_funds": "Federal Reserve latest FOMC statement"
+    }
+  },
+  "market_context": {
+    "us2y": null,
+    "us2y_as_of": null,
+    "us2y_change_5d_pp": null,
+    "us2y_change_20d_pp": null,
+    "us10y_change_5d_pp": null,
+    "us10y_change_20d_pp": null,
+    "curve_10y_2y_pp": null,
+    "dxy": 99.592,
+    "dxy_as_of": "2026-08-30",
+    "dxy_change_5d_pct": 0.598,
+    "dxy_change_20d_pct": -0.3681,
+    "vix": 14.43,
+    "vix_as_of": "2026-08-28",
+    "vix_change_5d_pct": -4.6266,
+    "vix_change_20d_pct": -9.7561,
+    "stress_signal": "calm",
+    "stress_score": 1,
+    "stress_reasons": [
+      "10Y >= 4.5%"
+    ],
+    "judgement": {
+      "level": "favorable",
+      "label": "우호적",
+      "action": "정상 분할매수",
+      "summary": "시장 스트레스는 제한적이지만 일부 부담 요인이 있습니다. 계획된 비중 안에서 정상적인 분할매수가 가능한 환경입니다.",
+      "reasons": [
+        "10Y >= 4.5%"
+      ]
+    },
+    "signal_note": "Rule-based market context and action guide; not individualized investment advice",
+    "sources": {
+      "us2y": "FRED DGS2",
+      "dxy": "Yahoo Finance DX-Y.NYB",
+      "vix": "Yahoo Finance ^VIX / FRED VIXCLS fallback"
     }
   },
   "valuation": {
@@ -24,7 +61,23 @@
       "zscore_5y": -1.0862,
       "zscore_observations": 326,
       "bond_signal": "expensive",
-      "history_signal": "caution"
+      "history_signal": "caution",
+      "judgement": {
+        "level": "caution",
+        "label": "주의",
+        "action": "소액 분할매수 / 추격 자제",
+        "summary": "매수는 가능하지만 안전마진이 크지 않습니다. 급등 추격보다 소액 분할 접근이 적합한 구간입니다.",
+        "decision_score": 4,
+        "market_score": 1,
+        "valuation_score": 3,
+        "reasons": [
+          "시장 스트레스 1점 (calm)",
+          "채권 대비: 고평가 부담",
+          "과거 대비: 밸류에이션 부담",
+          "10Y >= 4.5%"
+        ],
+        "note": "규칙 기반 참고 판단이며 개인별 매수/매도 추천이 아닙니다."
+      }
     },
     "voo": {
       "symbol": "VOO",
@@ -37,7 +90,23 @@
       "zscore_5y": -1.4733,
       "zscore_observations": 374,
       "bond_signal": "expensive",
-      "history_signal": "caution"
+      "history_signal": "caution",
+      "judgement": {
+        "level": "caution",
+        "label": "주의",
+        "action": "소액 분할매수 / 추격 자제",
+        "summary": "매수는 가능하지만 안전마진이 크지 않습니다. 급등 추격보다 소액 분할 접근이 적합한 구간입니다.",
+        "decision_score": 4,
+        "market_score": 1,
+        "valuation_score": 3,
+        "reasons": [
+          "시장 스트레스 1점 (calm)",
+          "채권 대비: 고평가 부담",
+          "과거 대비: 밸류에이션 부담",
+          "10Y >= 4.5%"
+        ],
+        "note": "규칙 기반 참고 판단이며 개인별 매수/매도 추천이 아닙니다."
+      }
     }
   },
   "warnings": []
