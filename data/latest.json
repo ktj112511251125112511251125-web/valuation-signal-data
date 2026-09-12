@@ -1,8 +1,8 @@
 {
   "schema_version": 4,
-  "updated_at": "2026-09-11T18:45:01.108695+00:00",
+  "updated_at": "2026-09-12T00:22:06.046248+00:00",
   "rates": {
-    "us10y": 4.965,
+    "us10y": 4.975,
     "us10y_as_of": "2026-09-11",
     "fed_funds_lower": 3.5,
     "fed_funds_upper": 3.75,
@@ -13,25 +13,26 @@
     }
   },
   "market_context": {
-    "us2y": 4.43,
-    "us2y_as_of": "2026-09-09",
-    "us2y_change_5d_pp": 0.04,
-    "us2y_change_20d_pp": 0.21,
-    "us10y_change_5d_pp": 0.04,
-    "us10y_change_20d_pp": 0.13,
-    "curve_10y_2y_pp": 0.535,
-    "dxy": 99.131,
+    "us2y": 4.56,
+    "us2y_as_of": "2026-09-10",
+    "us2y_change_5d_pp": 0.17,
+    "us2y_change_20d_pp": 0.36,
+    "us10y_change_5d_pp": 0.16,
+    "us10y_change_20d_pp": 0.27,
+    "curve_10y_2y_pp": 0.415,
+    "dxy": 99.095,
     "dxy_as_of": "2026-09-11",
-    "dxy_change_5d_pct": 0.1323,
-    "dxy_change_20d_pct": -0.8293,
-    "vix": 15.65,
+    "dxy_change_5d_pct": 0.096,
+    "dxy_change_20d_pct": -0.8653,
+    "vix": 15.84,
     "vix_as_of": "2026-09-11",
-    "vix_change_5d_pct": 7.7082,
-    "vix_change_20d_pct": 9.8246,
+    "vix_change_5d_pct": 9.0158,
+    "vix_change_20d_pct": 11.1579,
     "stress_signal": "calm",
-    "stress_score": 1,
+    "stress_score": 2,
     "stress_reasons": [
-      "10Y >= 4.5%"
+      "10Y >= 4.5%",
+      "10Y 20D 상승"
     ],
     "judgement": {
       "level": "favorable",
@@ -39,7 +40,8 @@
       "action": "정상 분할매수",
       "summary": "시장 스트레스는 제한적이지만 일부 부담 요인이 있습니다. 계획된 비중 안에서 정상적인 분할매수가 가능한 환경입니다.",
       "reasons": [
-        "10Y >= 4.5%"
+        "10Y >= 4.5%",
+        "10Y 20D 상승"
       ]
     },
     "signal_note": "Rule-based market context and action guide; not individualized investment advice",
@@ -57,8 +59,8 @@
       "forward_pe_as_of": "2026-09-11",
       "forward_pe_source": "Nasdaq-100 consensus Forward P/E (History of Market)",
       "earnings_yield": 3.5575,
-      "spread_vs_10y": -1.4075,
-      "zscore_5y": -1.3058,
+      "spread_vs_10y": -1.4175,
+      "zscore_5y": -1.3148,
       "zscore_observations": 337,
       "bond_signal": "expensive",
       "history_signal": "caution",
@@ -67,14 +69,15 @@
         "label": "주의",
         "action": "소액 분할매수 / 추격 자제",
         "summary": "매수는 가능하지만 안전마진이 크지 않습니다. 급등 추격보다 소액 분할 접근이 적합한 구간입니다.",
-        "decision_score": 4,
-        "market_score": 1,
+        "decision_score": 5,
+        "market_score": 2,
         "valuation_score": 3,
         "reasons": [
-          "시장 스트레스 1점 (calm)",
+          "시장 스트레스 2점 (calm)",
           "채권 대비: 고평가 부담",
           "과거 대비: 밸류에이션 부담",
-          "10Y >= 4.5%"
+          "10Y >= 4.5%",
+          "10Y 20D 상승"
         ],
         "note": "규칙 기반 참고 판단이며 개인별 매수/매도 추천이 아닙니다."
       }
@@ -86,24 +89,25 @@
       "forward_pe_as_of": "2026-09-11",
       "forward_pe_source": "S&P 500 consensus Forward P/E (History of Market)",
       "earnings_yield": 3.6914,
-      "spread_vs_10y": -1.2736,
-      "zscore_5y": -1.6167,
+      "spread_vs_10y": -1.2836,
+      "zscore_5y": -1.6244,
       "zscore_observations": 384,
       "bond_signal": "expensive",
       "history_signal": "expensive",
       "judgement": {
-        "level": "caution",
-        "label": "주의",
-        "action": "소액 분할매수 / 추격 자제",
-        "summary": "매수는 가능하지만 안전마진이 크지 않습니다. 급등 추격보다 소액 분할 접근이 적합한 구간입니다.",
-        "decision_score": 5,
-        "market_score": 1,
+        "level": "defensive",
+        "label": "경계",
+        "action": "신규매수 축소",
+        "summary": "시장 환경 또는 밸류에이션 부담이 높습니다. 기존 적립은 유지하더라도 신규매수 속도를 낮출 구간입니다.",
+        "decision_score": 6,
+        "market_score": 2,
         "valuation_score": 4,
         "reasons": [
-          "시장 스트레스 1점 (calm)",
+          "시장 스트레스 2점 (calm)",
           "채권 대비: 고평가 부담",
           "과거 대비: 고평가 부담",
-          "10Y >= 4.5%"
+          "10Y >= 4.5%",
+          "10Y 20D 상승"
         ],
         "note": "규칙 기반 참고 판단이며 개인별 매수/매도 추천이 아닙니다."
       }
