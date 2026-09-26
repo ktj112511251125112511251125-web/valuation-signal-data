@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "updated_at": "2026-09-25T19:34:25.720212+00:00",
+  "updated_at": "2026-09-26T00:40:12.265195+00:00",
   "rates": {
     "us10y": 5.184,
     "us10y_as_of": "2026-09-25",
@@ -13,26 +13,26 @@
     }
   },
   "market_context": {
-    "us2y": 4.85,
-    "us2y_as_of": "2026-09-23",
-    "us2y_change_5d_pp": 0.11,
+    "us2y": 4.87,
+    "us2y_as_of": "2026-09-24",
+    "us2y_change_5d_pp": 0.2,
     "us2y_change_20d_pp": 0.68,
-    "us10y_change_5d_pp": 0.1,
-    "us10y_change_20d_pp": 0.47,
-    "curve_10y_2y_pp": 0.334,
-    "dxy": 100.971,
+    "us10y_change_5d_pp": 0.24,
+    "us10y_change_20d_pp": 0.52,
+    "curve_10y_2y_pp": 0.314,
+    "dxy": 101.035,
     "dxy_as_of": "2026-09-25",
-    "dxy_change_5d_pct": 0.7494,
-    "dxy_change_20d_pct": 1.8263,
-    "vix": 14.85,
+    "dxy_change_5d_pct": 0.8132,
+    "dxy_change_20d_pct": 1.8909,
+    "vix": 14.87,
     "vix_as_of": "2026-09-25",
-    "vix_change_5d_pct": 0.2701,
-    "vix_change_20d_pct": 2.9106,
+    "vix_change_5d_pct": 0.4051,
+    "vix_change_20d_pct": 3.0492,
     "stress_signal": "caution",
-    "stress_score": 3,
+    "stress_score": 4,
     "stress_reasons": [
       "10Y >= 5%",
-      "10Y 20D 상승"
+      "10Y 20D 급등"
     ],
     "judgement": {
       "level": "caution",
@@ -41,7 +41,7 @@
       "summary": "일부 거시 부담이 존재합니다. 한 번에 진입하기보다 분할매수하고 급등 구간 추격은 자제할 환경입니다.",
       "reasons": [
         "10Y >= 5%",
-        "10Y 20D 상승"
+        "10Y 20D 급등"
       ]
     },
     "signal_note": "Rule-based market context and action guide; not individualized investment advice",
@@ -65,19 +65,19 @@
       "bond_signal": "expensive",
       "history_signal": "expensive",
       "judgement": {
-        "level": "defensive",
-        "label": "경계",
-        "action": "신규매수 축소",
-        "summary": "시장 환경 또는 밸류에이션 부담이 높습니다. 기존 적립은 유지하더라도 신규매수 속도를 낮출 구간입니다.",
-        "decision_score": 7,
-        "market_score": 3,
+        "level": "high_risk",
+        "label": "위험",
+        "action": "방어 / 신규매수 최소화",
+        "summary": "거시 위험과 밸류에이션 부담이 동시에 큽니다. 공격적인 신규진입보다 방어와 현금 여력을 우선할 구간입니다.",
+        "decision_score": 8,
+        "market_score": 4,
         "valuation_score": 4,
         "reasons": [
-          "시장 스트레스 3점 (caution)",
+          "시장 스트레스 4점 (caution)",
           "채권 대비: 고평가 부담",
           "과거 대비: 고평가 부담",
           "10Y >= 5%",
-          "10Y 20D 상승"
+          "10Y 20D 급등"
         ],
         "note": "규칙 기반 참고 판단이며 개인별 매수/매도 추천이 아닙니다."
       }
@@ -95,19 +95,19 @@
       "bond_signal": "expensive",
       "history_signal": "expensive",
       "judgement": {
-        "level": "defensive",
-        "label": "경계",
-        "action": "신규매수 축소",
-        "summary": "시장 환경 또는 밸류에이션 부담이 높습니다. 기존 적립은 유지하더라도 신규매수 속도를 낮출 구간입니다.",
-        "decision_score": 7,
-        "market_score": 3,
+        "level": "high_risk",
+        "label": "위험",
+        "action": "방어 / 신규매수 최소화",
+        "summary": "거시 위험과 밸류에이션 부담이 동시에 큽니다. 공격적인 신규진입보다 방어와 현금 여력을 우선할 구간입니다.",
+        "decision_score": 8,
+        "market_score": 4,
         "valuation_score": 4,
         "reasons": [
-          "시장 스트레스 3점 (caution)",
+          "시장 스트레스 4점 (caution)",
           "채권 대비: 고평가 부담",
           "과거 대비: 고평가 부담",
           "10Y >= 5%",
-          "10Y 20D 상승"
+          "10Y 20D 급등"
         ],
         "note": "규칙 기반 참고 판단이며 개인별 매수/매도 추천이 아닙니다."
       }
