@@ -1,50 +1,48 @@
 {
   "schema_version": 4,
-  "updated_at": "2026-10-06T02:20:46.599180+00:00",
+  "updated_at": "2026-10-06T20:34:25.791551+00:00",
   "rates": {
-    "us10y": 5.311,
-    "us10y_as_of": "2026-10-05",
+    "us10y": 5.269,
+    "us10y_as_of": "2026-10-06",
     "fed_funds_lower": 3.75,
     "fed_funds_upper": 4.0,
-    "fed_funds_as_of": "2026-10-05",
+    "fed_funds_as_of": "2026-10-06",
     "sources": {
       "us10y": "Yahoo Finance ^TNX",
       "fed_funds": "FRED DFEDTARL / DFEDTARU"
     }
   },
   "market_context": {
-    "us2y": 4.83,
-    "us2y_as_of": "2026-10-02",
-    "us2y_change_5d_pp": 0.02,
-    "us2y_change_20d_pp": 0.49,
-    "us10y_change_5d_pp": 0.11,
-    "us10y_change_20d_pp": 0.51,
-    "curve_10y_2y_pp": 0.481,
-    "dxy": 102.158,
-    "dxy_as_of": "2026-10-05",
-    "dxy_change_5d_pct": 0.9466,
-    "dxy_change_20d_pct": 3.0234,
-    "vix": 15.52,
-    "vix_as_of": "2026-10-05",
-    "vix_change_5d_pct": -3.4225,
-    "vix_change_20d_pct": 1.4379,
-    "stress_signal": "high_stress",
-    "stress_score": 6,
+    "us2y": 4.84,
+    "us2y_as_of": "2026-10-05",
+    "us2y_change_5d_pp": -0.08,
+    "us2y_change_20d_pp": 0.47,
+    "us10y_change_5d_pp": 0.07,
+    "us10y_change_20d_pp": 0.53,
+    "curve_10y_2y_pp": 0.429,
+    "dxy": 101.849,
+    "dxy_as_of": "2026-10-06",
+    "dxy_change_5d_pct": 0.4725,
+    "dxy_change_20d_pct": 3.0443,
+    "vix": 15.01,
+    "vix_as_of": "2026-10-06",
+    "vix_change_5d_pct": -6.4215,
+    "vix_change_20d_pct": -4.5165,
+    "stress_signal": "caution",
+    "stress_score": 5,
     "stress_reasons": [
       "10Y >= 5%",
       "10Y 20D 급등",
-      "DXY >= 102",
       "DXY 20D 상승"
     ],
     "judgement": {
-      "level": "high_risk",
-      "label": "위험",
-      "action": "방어",
-      "summary": "금리·달러·변동성 부담이 큰 환경입니다. 신규매수는 보수적으로 접근하고 현금 여력을 우선 확인할 구간입니다.",
+      "level": "defensive",
+      "label": "경계",
+      "action": "신규매수 축소",
+      "summary": "여러 거시 위험 신호가 겹쳐 있습니다. 추격매수보다 신규매수 속도를 낮추는 편이 유리한 환경입니다.",
       "reasons": [
         "10Y >= 5%",
         "10Y 20D 급등",
-        "DXY >= 102",
         "DXY 20D 상승"
       ]
     },
@@ -59,13 +57,13 @@
     "qqq": {
       "symbol": "QQQ",
       "proxy": "Nasdaq-100",
-      "forward_pe": 27.82,
-      "forward_pe_as_of": "2026-10-03",
+      "forward_pe": 28.14,
+      "forward_pe_as_of": "2026-10-06",
       "forward_pe_source": "Nasdaq-100 consensus Forward P/E (History of Market)",
-      "earnings_yield": 3.5945,
-      "spread_vs_10y": -1.7165,
-      "zscore_5y": -1.5509,
-      "zscore_observations": 350,
+      "earnings_yield": 3.5537,
+      "spread_vs_10y": -1.7153,
+      "zscore_5y": -1.5422,
+      "zscore_observations": 352,
       "bond_signal": "expensive",
       "history_signal": "expensive",
       "judgement": {
@@ -73,16 +71,16 @@
         "label": "위험",
         "action": "방어 / 신규매수 최소화",
         "summary": "거시 위험과 밸류에이션 부담이 동시에 큽니다. 공격적인 신규진입보다 방어와 현금 여력을 우선할 구간입니다.",
-        "decision_score": 10,
-        "market_score": 6,
+        "decision_score": 9,
+        "market_score": 5,
         "valuation_score": 4,
         "reasons": [
-          "시장 스트레스 6점 (high_stress)",
+          "시장 스트레스 5점 (caution)",
           "채권 대비: 고평가 부담",
           "과거 대비: 고평가 부담",
           "10Y >= 5%",
           "10Y 20D 급등",
-          "DXY >= 102"
+          "DXY 20D 상승"
         ],
         "note": "규칙 기반 참고 판단이며 개인별 매수/매도 추천이 아닙니다."
       }
@@ -90,13 +88,13 @@
     "voo": {
       "symbol": "VOO",
       "proxy": "S&P 500",
-      "forward_pe": 26.79,
-      "forward_pe_as_of": "2026-10-03",
+      "forward_pe": 26.97,
+      "forward_pe_as_of": "2026-10-06",
       "forward_pe_source": "S&P 500 consensus Forward P/E (History of Market)",
-      "earnings_yield": 3.7327,
-      "spread_vs_10y": -1.5783,
-      "zscore_5y": -1.8045,
-      "zscore_observations": 397,
+      "earnings_yield": 3.7078,
+      "spread_vs_10y": -1.5612,
+      "zscore_5y": -1.7818,
+      "zscore_observations": 399,
       "bond_signal": "expensive",
       "history_signal": "expensive",
       "judgement": {
@@ -104,16 +102,16 @@
         "label": "위험",
         "action": "방어 / 신규매수 최소화",
         "summary": "거시 위험과 밸류에이션 부담이 동시에 큽니다. 공격적인 신규진입보다 방어와 현금 여력을 우선할 구간입니다.",
-        "decision_score": 10,
-        "market_score": 6,
+        "decision_score": 9,
+        "market_score": 5,
         "valuation_score": 4,
         "reasons": [
-          "시장 스트레스 6점 (high_stress)",
+          "시장 스트레스 5점 (caution)",
           "채권 대비: 고평가 부담",
           "과거 대비: 고평가 부담",
           "10Y >= 5%",
           "10Y 20D 급등",
-          "DXY >= 102"
+          "DXY 20D 상승"
         ],
         "note": "규칙 기반 참고 판단이며 개인별 매수/매도 추천이 아닙니다."
       }
