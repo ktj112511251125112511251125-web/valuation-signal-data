@@ -1,38 +1,39 @@
 {
   "schema_version": 4,
-  "updated_at": "2026-10-07T01:38:05.948162+00:00",
+  "updated_at": "2026-10-07T20:47:17.831245+00:00",
   "rates": {
-    "us10y": 5.269,
-    "us10y_as_of": "2026-10-06",
+    "us10y": 5.277,
+    "us10y_as_of": "2026-10-07",
     "fed_funds_lower": 3.75,
     "fed_funds_upper": 4.0,
-    "fed_funds_as_of": "2026-10-06",
+    "fed_funds_as_of": "2026-10-07",
     "sources": {
       "us10y": "Yahoo Finance ^TNX",
       "fed_funds": "FRED DFEDTARL / DFEDTARU"
     }
   },
   "market_context": {
-    "us2y": 4.84,
-    "us2y_as_of": "2026-10-05",
-    "us2y_change_5d_pp": -0.08,
-    "us2y_change_20d_pp": 0.47,
-    "us10y_change_5d_pp": 0.07,
-    "us10y_change_20d_pp": 0.53,
-    "curve_10y_2y_pp": 0.429,
-    "dxy": 101.981,
-    "dxy_as_of": "2026-10-06",
-    "dxy_change_5d_pct": 0.6027,
-    "dxy_change_20d_pct": 3.1779,
-    "vix": 15.01,
-    "vix_as_of": "2026-10-06",
-    "vix_change_5d_pct": -6.4215,
-    "vix_change_20d_pct": -4.5165,
+    "us2y": 4.79,
+    "us2y_as_of": "2026-10-06",
+    "us2y_change_5d_pp": -0.1,
+    "us2y_change_20d_pp": 0.4,
+    "us10y_change_5d_pp": 0.01,
+    "us10y_change_20d_pp": 0.47,
+    "curve_10y_2y_pp": 0.487,
+    "dxy": 102.286,
+    "dxy_as_of": "2026-10-07",
+    "dxy_change_5d_pct": 0.8241,
+    "dxy_change_20d_pct": 3.5598,
+    "vix": 15.08,
+    "vix_as_of": "2026-10-07",
+    "vix_change_5d_pct": -7.7111,
+    "vix_change_20d_pct": -8.384,
     "stress_signal": "caution",
     "stress_score": 5,
     "stress_reasons": [
       "10Y >= 5%",
-      "10Y 20D 급등",
+      "10Y 20D 상승",
+      "DXY >= 102",
       "DXY 20D 상승"
     ],
     "judgement": {
@@ -42,7 +43,8 @@
       "summary": "여러 거시 위험 신호가 겹쳐 있습니다. 추격매수보다 신규매수 속도를 낮추는 편이 유리한 환경입니다.",
       "reasons": [
         "10Y >= 5%",
-        "10Y 20D 급등",
+        "10Y 20D 상승",
+        "DXY >= 102",
         "DXY 20D 상승"
       ]
     },
@@ -57,13 +59,13 @@
     "qqq": {
       "symbol": "QQQ",
       "proxy": "Nasdaq-100",
-      "forward_pe": 28.14,
-      "forward_pe_as_of": "2026-10-06",
+      "forward_pe": 28.2,
+      "forward_pe_as_of": "2026-10-07",
       "forward_pe_source": "Nasdaq-100 consensus Forward P/E (History of Market)",
-      "earnings_yield": 3.5537,
-      "spread_vs_10y": -1.7153,
-      "zscore_5y": -1.5422,
-      "zscore_observations": 352,
+      "earnings_yield": 3.5461,
+      "spread_vs_10y": -1.7309,
+      "zscore_5y": -1.5562,
+      "zscore_observations": 353,
       "bond_signal": "expensive",
       "history_signal": "expensive",
       "judgement": {
@@ -79,8 +81,8 @@
           "채권 대비: 고평가 부담",
           "과거 대비: 고평가 부담",
           "10Y >= 5%",
-          "10Y 20D 급등",
-          "DXY 20D 상승"
+          "10Y 20D 상승",
+          "DXY >= 102"
         ],
         "note": "규칙 기반 참고 판단이며 개인별 매수/매도 추천이 아닙니다."
       }
@@ -88,13 +90,13 @@
     "voo": {
       "symbol": "VOO",
       "proxy": "S&P 500",
-      "forward_pe": 26.97,
-      "forward_pe_as_of": "2026-10-06",
+      "forward_pe": 27.14,
+      "forward_pe_as_of": "2026-10-07",
       "forward_pe_source": "S&P 500 consensus Forward P/E (History of Market)",
-      "earnings_yield": 3.7078,
-      "spread_vs_10y": -1.5612,
-      "zscore_5y": -1.7818,
-      "zscore_observations": 399,
+      "earnings_yield": 3.6846,
+      "spread_vs_10y": -1.5924,
+      "zscore_5y": -1.8061,
+      "zscore_observations": 400,
       "bond_signal": "expensive",
       "history_signal": "expensive",
       "judgement": {
@@ -110,8 +112,8 @@
           "채권 대비: 고평가 부담",
           "과거 대비: 고평가 부담",
           "10Y >= 5%",
-          "10Y 20D 급등",
-          "DXY 20D 상승"
+          "10Y 20D 상승",
+          "DXY >= 102"
         ],
         "note": "규칙 기반 참고 판단이며 개인별 매수/매도 추천이 아닙니다."
       }
