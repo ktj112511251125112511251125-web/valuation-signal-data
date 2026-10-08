@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "updated_at": "2026-10-07T20:47:17.831245+00:00",
+  "updated_at": "2026-10-08T02:02:40.886193+00:00",
   "rates": {
     "us10y": 5.277,
     "us10y_as_of": "2026-10-07",
@@ -20,10 +20,10 @@
     "us10y_change_5d_pp": 0.01,
     "us10y_change_20d_pp": 0.47,
     "curve_10y_2y_pp": 0.487,
-    "dxy": 102.286,
+    "dxy": 102.187,
     "dxy_as_of": "2026-10-07",
-    "dxy_change_5d_pct": 0.8241,
-    "dxy_change_20d_pct": 3.5598,
+    "dxy_change_5d_pct": 0.7265,
+    "dxy_change_20d_pct": 3.4596,
     "vix": 15.08,
     "vix_as_of": "2026-10-07",
     "vix_change_5d_pct": -7.7111,
