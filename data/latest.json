@@ -1,12 +1,12 @@
 {
   "schema_version": 4,
-  "updated_at": "2026-10-16T00:28:23.797293+00:00",
+  "updated_at": "2026-10-16T19:02:09.156897+00:00",
   "rates": {
-    "us10y": 5.089,
-    "us10y_as_of": "2026-10-15",
+    "us10y": 5.106,
+    "us10y_as_of": "2026-10-16",
     "fed_funds_lower": 3.75,
     "fed_funds_upper": 4.0,
-    "fed_funds_as_of": "2026-10-15",
+    "fed_funds_as_of": "2026-10-16",
     "sources": {
       "us10y": "Yahoo Finance ^TNX",
       "fed_funds": "FRED DFEDTARL / DFEDTARU"
@@ -19,20 +19,20 @@
     "us2y_change_20d_pp": 0.15,
     "us10y_change_5d_pp": -0.08,
     "us10y_change_20d_pp": 0.19,
-    "curve_10y_2y_pp": 0.269,
-    "dxy": 102.083,
-    "dxy_as_of": "2026-10-15",
-    "dxy_change_5d_pct": -0.0558,
-    "dxy_change_20d_pct": 1.8589,
-    "vix": 16.46,
-    "vix_as_of": "2026-10-15",
-    "vix_change_5d_pct": 6.8138,
-    "vix_change_20d_pct": 6.6062,
+    "curve_10y_2y_pp": 0.286,
+    "dxy": 101.849,
+    "dxy_as_of": "2026-10-16",
+    "dxy_change_5d_pct": -0.3532,
+    "dxy_change_20d_pct": 1.6254,
+    "vix": 20.36,
+    "vix_as_of": "2026-10-16",
+    "vix_change_5d_pct": 37.1968,
+    "vix_change_20d_pct": 37.4747,
     "stress_signal": "caution",
-    "stress_score": 3,
+    "stress_score": 4,
     "stress_reasons": [
       "10Y >= 5%",
-      "DXY >= 102"
+      "VIX >= 20"
     ],
     "judgement": {
       "level": "caution",
@@ -41,7 +41,7 @@
       "summary": "일부 거시 부담이 존재합니다. 한 번에 진입하기보다 분할매수하고 급등 구간 추격은 자제할 환경입니다.",
       "reasons": [
         "10Y >= 5%",
-        "DXY >= 102"
+        "VIX >= 20"
       ]
     },
     "signal_note": "Rule-based market context and action guide; not individualized investment advice",
@@ -55,13 +55,13 @@
     "qqq": {
       "symbol": "QQQ",
       "proxy": "Nasdaq-100",
-      "forward_pe": 27.71,
-      "forward_pe_as_of": "2026-10-15",
+      "forward_pe": 26.9,
+      "forward_pe_as_of": "2026-10-16",
       "forward_pe_source": "Nasdaq-100 consensus Forward P/E (History of Market)",
-      "earnings_yield": 3.6088,
-      "spread_vs_10y": -1.4802,
-      "zscore_5y": -1.3209,
-      "zscore_observations": 359,
+      "earnings_yield": 3.7175,
+      "spread_vs_10y": -1.3885,
+      "zscore_5y": -1.2364,
+      "zscore_observations": 360,
       "bond_signal": "expensive",
       "history_signal": "caution",
       "judgement": {
@@ -69,15 +69,15 @@
         "label": "경계",
         "action": "신규매수 축소",
         "summary": "시장 환경 또는 밸류에이션 부담이 높습니다. 기존 적립은 유지하더라도 신규매수 속도를 낮출 구간입니다.",
-        "decision_score": 6,
-        "market_score": 3,
+        "decision_score": 7,
+        "market_score": 4,
         "valuation_score": 3,
         "reasons": [
-          "시장 스트레스 3점 (caution)",
+          "시장 스트레스 4점 (caution)",
           "채권 대비: 고평가 부담",
           "과거 대비: 밸류에이션 부담",
           "10Y >= 5%",
-          "DXY >= 102"
+          "VIX >= 20"
         ],
         "note": "규칙 기반 참고 판단이며 개인별 매수/매도 추천이 아닙니다."
       }
@@ -85,29 +85,29 @@
     "voo": {
       "symbol": "VOO",
       "proxy": "S&P 500",
-      "forward_pe": 26.94,
-      "forward_pe_as_of": "2026-10-15",
+      "forward_pe": 26.84,
+      "forward_pe_as_of": "2026-10-16",
       "forward_pe_source": "S&P 500 consensus Forward P/E (History of Market)",
-      "earnings_yield": 3.712,
-      "spread_vs_10y": -1.377,
-      "zscore_5y": -1.6327,
-      "zscore_observations": 406,
+      "earnings_yield": 3.7258,
+      "spread_vs_10y": -1.3802,
+      "zscore_5y": -1.6361,
+      "zscore_observations": 407,
       "bond_signal": "expensive",
       "history_signal": "expensive",
       "judgement": {
-        "level": "defensive",
-        "label": "경계",
-        "action": "신규매수 축소",
-        "summary": "시장 환경 또는 밸류에이션 부담이 높습니다. 기존 적립은 유지하더라도 신규매수 속도를 낮출 구간입니다.",
-        "decision_score": 7,
-        "market_score": 3,
+        "level": "high_risk",
+        "label": "위험",
+        "action": "방어 / 신규매수 최소화",
+        "summary": "거시 위험과 밸류에이션 부담이 동시에 큽니다. 공격적인 신규진입보다 방어와 현금 여력을 우선할 구간입니다.",
+        "decision_score": 8,
+        "market_score": 4,
         "valuation_score": 4,
         "reasons": [
-          "시장 스트레스 3점 (caution)",
+          "시장 스트레스 4점 (caution)",
           "채권 대비: 고평가 부담",
           "과거 대비: 고평가 부담",
           "10Y >= 5%",
-          "DXY >= 102"
+          "VIX >= 20"
         ],
         "note": "규칙 기반 참고 판단이며 개인별 매수/매도 추천이 아닙니다."
       }
