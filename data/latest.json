@@ -1,12 +1,12 @@
 {
   "schema_version": 4,
-  "updated_at": "2026-10-18T00:05:52.964906+00:00",
+  "updated_at": "2026-10-18T18:16:55.928571+00:00",
   "rates": {
     "us10y": 5.098,
     "us10y_as_of": "2026-10-16",
     "fed_funds_lower": 3.75,
     "fed_funds_upper": 4.0,
-    "fed_funds_as_of": "2026-10-17",
+    "fed_funds_as_of": "2026-10-18",
     "sources": {
       "us10y": "Yahoo Finance ^TNX",
       "fed_funds": "FRED DFEDTARL / DFEDTARU"
