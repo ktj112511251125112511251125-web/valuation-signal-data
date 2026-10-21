@@ -1,15 +1,15 @@
 {
   "schema_version": 4,
-  "updated_at": "2026-10-21T00:40:45.525717+00:00",
+  "updated_at": "2026-10-21T19:39:09.636316+00:00",
   "rates": {
-    "us10y": 5.117,
-    "us10y_as_of": "2026-10-20",
+    "us10y": 5.146,
+    "us10y_as_of": "2026-10-21",
     "fed_funds_lower": 3.75,
     "fed_funds_upper": 4.0,
     "fed_funds_as_of": "2026-10-20",
     "sources": {
       "us10y": "Yahoo Finance ^TNX",
-      "fed_funds": "FRED DFEDTARL / DFEDTARU"
+      "fed_funds": "Previous successful value"
     }
   },
   "market_context": {
@@ -17,17 +17,17 @@
     "us2y_as_of": "2026-10-19",
     "us2y_change_5d_pp": -0.03,
     "us2y_change_20d_pp": 0.01,
-    "us10y_change_5d_pp": -0.09,
-    "us10y_change_20d_pp": 0.14,
-    "curve_10y_2y_pp": 0.347,
-    "dxy": 101.793,
-    "dxy_as_of": "2026-10-20",
-    "dxy_change_5d_pct": -0.3787,
-    "dxy_change_20d_pct": 1.1859,
-    "vix": 17.31,
-    "vix_as_of": "2026-10-20",
-    "vix_change_5d_pct": 13.3595,
-    "vix_change_20d_pct": 21.8156,
+    "us10y_change_5d_pp": null,
+    "us10y_change_20d_pp": null,
+    "curve_10y_2y_pp": 0.376,
+    "dxy": 101.749,
+    "dxy_as_of": "2026-10-21",
+    "dxy_change_5d_pct": -0.7811,
+    "dxy_change_20d_pct": 0.6419,
+    "vix": 16.93,
+    "vix_as_of": "2026-10-21",
+    "vix_change_5d_pct": 0.3557,
+    "vix_change_20d_pct": 11.5283,
     "stress_signal": "calm",
     "stress_score": 2,
     "stress_reasons": [
@@ -53,13 +53,13 @@
     "qqq": {
       "symbol": "QQQ",
       "proxy": "Nasdaq-100",
-      "forward_pe": 26.56,
-      "forward_pe_as_of": "2026-10-20",
+      "forward_pe": 26.49,
+      "forward_pe_as_of": "2026-10-21",
       "forward_pe_source": "Nasdaq-100 consensus Forward P/E (History of Market)",
-      "earnings_yield": 3.7651,
-      "spread_vs_10y": -1.3519,
-      "zscore_5y": -1.201,
-      "zscore_observations": 362,
+      "earnings_yield": 3.775,
+      "spread_vs_10y": -1.371,
+      "zscore_5y": -1.22,
+      "zscore_observations": 363,
       "bond_signal": "expensive",
       "history_signal": "caution",
       "judgement": {
@@ -82,13 +82,13 @@
     "voo": {
       "symbol": "VOO",
       "proxy": "S&P 500",
-      "forward_pe": 26.51,
-      "forward_pe_as_of": "2026-10-20",
+      "forward_pe": 26.55,
+      "forward_pe_as_of": "2026-10-21",
       "forward_pe_source": "S&P 500 consensus Forward P/E (History of Market)",
-      "earnings_yield": 3.7722,
-      "spread_vs_10y": -1.3448,
-      "zscore_5y": -1.6047,
-      "zscore_observations": 409,
+      "earnings_yield": 3.7665,
+      "spread_vs_10y": -1.3795,
+      "zscore_5y": -1.633,
+      "zscore_observations": 410,
       "bond_signal": "expensive",
       "history_signal": "expensive",
       "judgement": {
@@ -110,6 +110,9 @@
     }
   },
   "warnings": [
-    "Federal Reserve target range failed: federal funds target range not found in latest FOMC statement"
+    "Federal Reserve target range failed: federal funds target range not found in latest FOMC statement",
+    "FRED Fed Funds target failed: Error tokenizing data. C error: Expected 1 fields in line 5, saw 3\n",
+    "FRED DGS2 failed: Error tokenizing data. C error: Expected 1 fields in line 5, saw 3\n",
+    "FRED DGS10 trend failed: Error tokenizing data. C error: Expected 1 fields in line 5, saw 3\n"
   ]
 }
