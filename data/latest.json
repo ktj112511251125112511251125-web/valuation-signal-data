@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "updated_at": "2026-10-21T19:39:09.636316+00:00",
+  "updated_at": "2026-10-22T00:43:39.750287+00:00",
   "rates": {
     "us10y": 5.146,
     "us10y_as_of": "2026-10-21",
@@ -20,14 +20,14 @@
     "us10y_change_5d_pp": null,
     "us10y_change_20d_pp": null,
     "curve_10y_2y_pp": 0.376,
-    "dxy": 101.749,
+    "dxy": 101.707,
     "dxy_as_of": "2026-10-21",
-    "dxy_change_5d_pct": -0.7811,
-    "dxy_change_20d_pct": 0.6419,
-    "vix": 16.93,
+    "dxy_change_5d_pct": -0.822,
+    "dxy_change_20d_pct": 0.6004,
+    "vix": 16.68,
     "vix_as_of": "2026-10-21",
-    "vix_change_5d_pct": 0.3557,
-    "vix_change_20d_pct": 11.5283,
+    "vix_change_5d_pct": -1.1263,
+    "vix_change_20d_pct": 9.8814,
     "stress_signal": "calm",
     "stress_score": 2,
     "stress_reasons": [
