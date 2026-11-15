@@ -1,6 +1,6 @@
 {
   "schema_version": 4,
-  "updated_at": "2026-11-14T20:05:48.273034+00:00",
+  "updated_at": "2026-11-15T01:58:55.751091+00:00",
   "rates": {
     "us10y": 5.154,
     "us10y_as_of": "2026-11-13",
@@ -62,8 +62,8 @@
       "forward_pe_source": "Nasdaq-100 consensus Forward P/E (History of Market)",
       "earnings_yield": 4.1408,
       "spread_vs_10y": -1.0132,
-      "zscore_5y": -0.9042,
-      "zscore_observations": 381,
+      "zscore_5y": -0.9027,
+      "zscore_observations": 380,
       "bond_signal": "expensive",
       "history_signal": "caution",
       "judgement": {
@@ -93,8 +93,8 @@
       "forward_pe_source": "S&P 500 consensus Forward P/E (History of Market)",
       "earnings_yield": 3.9857,
       "spread_vs_10y": -1.1683,
-      "zscore_5y": -1.4797,
-      "zscore_observations": 427,
+      "zscore_5y": -1.4807,
+      "zscore_observations": 426,
       "bond_signal": "expensive",
       "history_signal": "caution",
       "judgement": {
